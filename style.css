@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://janschreiber.github.io/img2/black-chalk.jpg");
+    text-align: center;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 50vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 50px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+#resetBtn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#newGame{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#new-btn{
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #46c64f;
+    color: black;
+    font-size: 16px;
+}
+
+#msg {
+    color: white;
+    font-size: 50px;
+}
+
+.msg-container{
+        height: 35px;
+}
+
+.hide{
+    display: none;
+}
+
