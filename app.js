@@ -4,11 +4,7 @@ let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 
-let turn = 1;
-let count = 0;
-
-let temp1 = 0;
-let temp2 = 0;
+let turn = true;
 
 let winner = [
     [0, 1, 2],
@@ -39,7 +35,6 @@ boxes.forEach((box) => {
             turn = true;
         }
         box.disabled = true;
-        count++;
 
         let isWinner = checkWinner();
 
@@ -74,12 +69,6 @@ function showWinner (winner) {
     msg.innerText = winner + " player won";
     msgContainer.classList.remove("hide");
     disableBoxes();
-    if (winner === "X"){
-        temp1 += 1;
-    }
-    else if (winner === "X"){
-        temp2 += 1;
-    }
 }
 
 function checkWinner() {
@@ -91,7 +80,7 @@ function checkWinner() {
         if (pos1 != "" && pos2 != "" && pos3 != ""){
             if (pos1 === pos2 && pos2 === pos3){
                 showWinner(pos1);
-                return 1;
+                return true;
             }
         }
     }
